@@ -1,0 +1,89 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #0B0B1E;
+    padding: 2px;
+  }
+  footer {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height:100vh;
+}
+section{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+
+}
+
+.two {
+   
+}
+.three {
+    background-color: #0B0B1E;
+}
+.four {
+    background-color: rgb(255, 255, 255);
+}
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+  }
+  
+  .image1 {
+    position:right;
+    top: -100;
+    right: 100;
+  }
+  .image2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+   
+  
+  }
+  .btn{
+    top: 20px;
+    display: inline-block;
+    padding: 9px 12px;
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    border-radius: 4rem;
+    box-shadow: 0 0 2rem var(--main-color);
+    font-size: 15px;
+    color: var(--second-bg-color);
+    font-weight: 600;
+    transition: 2s;
+    text-decoration: none;
+}
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media (max-width: 750px) {
+  #background-video { display: none; }
+  body {
+    background: url("White\ Modern\ and\ Elegant\ Smart\ Watch\ Website\ Desktop\ Prototype.mp4") no-repeat;
+    background-size: cover;
+  }
+}
